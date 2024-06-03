@@ -1,0 +1,74 @@
+:root{
+  font-family: roboto;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #222;
+  height: 100vh;
+}
+
+#content{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr 8fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+#head{
+  color: white;
+  width: 100vw;
+  font-size: 2rem;
+  font-weight:bolder;
+  background-color: #212121;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+#generate-btn,
+#download-btn{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  background-color: #4a6dd4;
+  border-radius: 10px;
+}
+
+#generate-btn:hover,
+#download-btn:hover{
+  background-color: #557ae7;
+  transform: scale(1.005);
+}
+
+#deck{
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  width: 60vw;
+}
+
+#cover{
+  position: relative;
+  left: 50%;
+}
+
+.card{
+  height: 100%;
+  width: 100%;
+}
+
+
